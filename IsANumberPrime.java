@@ -13,9 +13,10 @@ public class Main {
 		for (int times = 1; times <= t; times++) {
 			int n = sc.nextInt();
 			int factor = 0;
-			for (int i = 1; i <= n; i++) {
+			for (int i = 2; i*i <= n; i++) {
 				if (n % i == 0) {
 					factor++;
+					break;
 				}
 			}
 			if (factor == 2) {
